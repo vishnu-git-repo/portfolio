@@ -1,0 +1,212 @@
+body{
+    background: linear-gradient(90deg, rgba(92, 1, 1, 0.8),rgba(1, 92, 91, 0.8));
+    /* background: rgba(0, 0, 0, 0.862); */
+}
+#main{
+    min-height:80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-title{
+    color: rgba(195, 183, 92, 0.706);
+    font-weight:lighter;
+}
+.sub-title-h6{
+    font-weight:lighter;
+    /* color: rgb(0, 255, 234); */
+}
+
+
+#header{
+    margin-top: 20px;
+    text-align: center;
+}
+#header nav{
+    display: flex;
+    justify-content: center;
+}
+#header li{
+    border-bottom: 3px solid rgba(233, 67, 25, 0.29);
+}
+#header .nav-link{
+    color: aliceblue;
+    font-size: 19px;
+    text-shadow: 2px 2px 5px black;
+}
+#header .nav-checked{
+    color: rgb(233, 66, 25);
+}
+
+
+
+
+
+
+
+/* --------------------MAIN--------------------------*/
+
+
+/* Dahboard */
+#dashboard-body{
+    display: block;
+}
+#profile-pic img{
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0,0.5);
+    width: 100%;
+    min-width: 200px;
+    max-width: 200px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+#profile-content{
+    font-size: larger;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    color: aliceblue;
+}
+#profile-content .name{
+    font-size: 50px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 10px;
+}
+#profile-content .profession{
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.742);
+    /* font-weight: bold; */
+    letter-spacing: 3px;
+}
+#dashboard-body .btn{
+    background-color: rgba(174, 178, 182, 0.909);
+    color: rgba(51, 50, 50, 0.835);
+    margin-top: 10px;
+}
+#dashboard-body .btn img{
+    width: 25px;
+}
+
+
+
+
+
+/* About */
+#about-body{
+    display: none;
+    color: rgb(200, 204, 208);
+}
+
+#about-body-details .mytable{
+    width: 500px;
+    background-color: rgba(54, 55, 56, 0.791);
+    box-shadow: 1px 1px 3px aliceblue;
+    padding: 20px;
+}
+#about-body-details td{
+    padding: 5px 10px;
+}
+#about-body-details th{
+    border-right: 2px solid rgb(91, 91, 91);
+    padding: 0px 10px;
+    font-weight: normal;
+}
+
+#about-body-description div{
+    padding: 0px 20px;
+    text-indent: 3rem;
+    text-align: justify;
+}
+
+#about-body-school-1 .box,#about-body-school-2 .box,#about-body-college .box{
+    padding: 20px;
+    width: 500px;
+    /* color: rgb(200, 204, 208); */
+    box-shadow: 0px 0px 5px rgba(240, 248, 255, 0.635);
+}
+
+.studies-percent{
+    color: rgb(205, 116, 62);
+}
+#about-body-school-1 .box h6,#about-body-school-2 .box h6,#about-body-college .box h6{
+    color: rgba(127, 255, 212, 0.66);
+}
+
+
+
+
+
+/* Certificate */
+#certificate-body{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(200, 204, 208);
+    width: 80vw;
+}
+#certificate-body .card{
+    width: fit-content;
+    height: fit-content;
+    /* padding: 10px; */
+    background-color: rgba(47, 46, 46, 0.315);
+    color: rgb(200, 204, 208);
+    margin: 10px;
+    /* margin-top: 10px; */
+}
+#certificate-body img{
+    width: 300px;
+    height: 170px;
+    border-radius: 8px;
+}
+#certificate-body h6{
+    color : rgba(127, 255, 212, 0.66);
+    font-weight: normal;
+}
+#certificate-body h6,#certificate-body p{
+    text-align: center;
+}
+
+
+
+
+
+
+/* Contact */
+#contact-body{
+    display: none;
+}
+#contact-body div{
+    display: flex;
+}
+#contact-body  a{
+    width: fit-content;
+    height: fit-content;
+}
+#contact-body  a:hover{
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.371);
+}
+#contact-body  a:hover:after{
+    box-shadow: 0px 0px 5px rgba(4, 4, 4, 0.371);
+}
+#contact-body  a img{
+    margin: 5px;
+    width: 30px;
+}
+
+
+
+
+@media only screen and (max-width:575px) {
+    #about-body-description div{
+        width: 500px;
+    }
+    body{
+        background: rgba(0, 0, 0, 0.729);
+    }
+
+
+}
