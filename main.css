@@ -1,5 +1,6 @@
 body{
     background: linear-gradient(90deg, rgba(92, 1, 1, 0.8),rgba(1, 92, 91, 0.8));
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,13,121,1) 63%, rgba(0,0,0,1) 100%); */
     /* background: rgba(0, 0, 0, 0.862); */
 }
 #main{
@@ -16,7 +17,6 @@ body{
 }
 .sub-title-h6{
     font-weight:lighter;
-    /* color: rgb(0, 255, 234); */
 }
 
 
@@ -51,7 +51,7 @@ body{
 
 /* Dahboard */
 #dashboard-body{
-    display: block;
+    display: none;
 }
 #profile-pic img{
     border-radius: 25px;
@@ -97,7 +97,7 @@ body{
 
 /* About */
 #about-body{
-    display: none;
+    display: block;
     color: rgb(200, 204, 208);
 }
 
@@ -125,7 +125,6 @@ body{
 #about-body-school-1 .box,#about-body-school-2 .box,#about-body-college .box{
     padding: 20px;
     width: 500px;
-    /* color: rgb(200, 204, 208); */
     box-shadow: 0px 0px 5px rgba(240, 248, 255, 0.635);
 }
 
@@ -150,14 +149,12 @@ body{
 }
 #certificate-body .card{
     width: fit-content;
-    height: fit-content;
-    /* padding: 10px; */
+    /* height: fit-content; */
     background-color: rgba(47, 46, 46, 0.315);
     color: rgb(200, 204, 208);
     margin: 10px;
-    /* margin-top: 10px; */
 }
-#certificate-body img{
+#certificate-body .card-img-top{
     width: 300px;
     height: 170px;
     border-radius: 8px;
@@ -195,18 +192,64 @@ body{
 #contact-body  a img{
     margin: 5px;
     width: 30px;
+    opacity: 0.4;
 }
 
 
 
 
+
+
 @media only screen and (max-width:575px) {
-    #about-body-description div{
-        width: 500px;
-    }
     body{
-        background: rgba(0, 0, 0, 0.729);
+        background: rgba(0, 0, 0, 0.684);
+        font-size: 12px;
+    }
+/* --------------------------------------------------------------------- */
+    
+    #header{
+        margin-top: 20px;
+        text-align: center;
+    }
+    #header nav{
+        display: flex;
+        justify-content: center;
+    }
+    #header li{
+        border: 1px solid rgba(0, 0, 0, 0.381);
+        border-radius: 8px;
+        margin: 1px;
+        background-color: rgb(37, 37, 37);
+    }
+    #header .nav-link{
+        color: aliceblue;
+        font-size: 12px;
+        text-shadow: 2px 2px 5px black;
+    }
+    #header .nav-checked{
+        color: rgb(233, 66, 25);
     }
 
+/* ----------------------------------------------------------------------*/
+
+    #about-body{
+        width: 400px;
+    }
+    #about-body-details .mytable {
+        width: 400px;
+    }
+    #about-body-school-1 .box,#about-body-school-2 .box,#about-body-college .box{
+        width: 350px;
+        box-shadow: 0px 0px 5px rgba(240, 248, 255, 0.635);
+    }
+
+/* -----------------------------------------------------------------------*/
+
+    #contact-body  a img{
+        margin: 5px;
+        width: 30px;
+        opacity: 0.6;
+
+    }
 
 }
