@@ -200,10 +200,10 @@ body{
 
 
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:575px) {
     body{
         background: rgba(0, 0, 0, 0.684);
-/*         font-size: 12px; */
+        font-size: 12px;
     }
 /* --------------------------------------------------------------------- */
     
