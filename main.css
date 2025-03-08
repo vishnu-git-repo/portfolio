@@ -51,7 +51,7 @@ body{
 
 /* Dahboard */
 #dashboard-body{
-    display: none;
+    display: block;
 }
 #profile-pic img{
     border-radius: 25px;
@@ -97,7 +97,7 @@ body{
 
 /* About */
 #about-body{
-    display: block;
+    display: none;
     color: rgb(200, 204, 208);
 }
 
