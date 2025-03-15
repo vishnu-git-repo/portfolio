@@ -153,12 +153,18 @@ body{
     background-color: rgba(47, 46, 46, 0.315);
     color: rgb(200, 204, 208);
     margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
 }
 #certificate-body .card-img-top{
     width: 300px;
     height: 170px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
+#certificate-body .card-img-top:hover,#certificate-body .card-img-top:active{
+    transform: scale(1.025);
+}
+
 #certificate-body h6{
     color : rgba(127, 255, 212, 0.66);
     font-weight: normal;
